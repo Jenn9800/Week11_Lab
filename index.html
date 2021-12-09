@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script language="javascript">
+ var randomNumber = Math.floor(Math.random()*10+1);
+ var count = 1;
+while (guess != randomNumber){
+
+var guess =  prompt("Guess a number between 1 to 10 only: ");
+ if(guess>=1 && guess<=10){
+  if(guess == randomNumber){
+   alert("Congratulations! You got it! \n"+ "Total Number of Guesses = " + count);  
+ break
+  }else if (guess < randomNumber){
+      count++;
+
+   alert("Guess a greater number!");
+   }else{
+   count++;
+   alert("Guess a smaller number!");
+  }
+}
+ }
+</script>
+<p>Congratulations!</p>
+<p>Press F5 to play again!</p>
+
+
+</body>
+</html>
